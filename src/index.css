@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #6366f1;    /* Azul índigo moderno */
+  --secondary: #4f46e5;
+  --bg: #0f172a;         /* Fondo oscuro azulado */
+  --card-bg: #1e293b;    /* Fondo de tarjetas */
+  --text: #f8fafc;
+  --accent: #10b981;     /* Verde para el botón guardar */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Estilo del Formulario */
+.form-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  border: 1px solid #334155;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* Estilo de la Tabla/Lista */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.producto-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid var(--primary);
+  transition: 0.3s;
+}
+
+.producto-card:hover {
+  transform: scale(1.03);
+}
+
+.producto-card h3 {
+  margin: 0 0 10px 0;
+  color: var(--primary);
+}
+
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.stock-tag {
+  background: #334155;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  float: right;
 }

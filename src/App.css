@@ -1,38 +1,195 @@
-.App {
+/* Variables de colores globales */
+:root {
+  --primary: #6366f1;    /* Azul índigo */
+  --bg: #0f172a;         /* Fondo oscuro profundo */
+  --card-bg: #1e293b;    /* Fondo de tarjetas */
+  --text: #f8fafc;       /* Blanco grisáceo */
+  --accent: #10b981;     /* Verde esmeralda (Guardar) */
+  --danger: #ef4444;     /* Rojo (Eliminar) */
+  --input-bg: #0f172a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Título con degradado moderno */
+h1 {
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Tarjeta del Formulario */
+.form-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  border: 1px solid #334155;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex: 1;
+}
+
+.input-group label {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input {
+  background: var(--input-bg);
+  border: 1px solid #334155;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Botón Guardar */
+.btn-save {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 45px;
+}
+
+.btn-save:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Estilos del Buscador */
+.search-container {
+  margin-bottom: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card-bg);
+  border: 1px solid #334155;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px; /* Redondeado tipo Google */
+}
+
+/* Cuadrícula de Productos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Tarjeta de Producto */
+.producto-card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #334155;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.producto-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.stock-tag {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.price-tag {
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 15px 0;
+  display: block;
+}
+
+/* Botón Eliminar */
+.btn-delete {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-delete:hover {
+  background: var(--danger);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .form-card {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
