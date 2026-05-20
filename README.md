@@ -1,10 +1,19 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto de Desarrollo de Software - Instituto Nacional de San Miguel Tepezontes.
+
+Este proyecto es una aplicación web moderna que integra un frontend desarrollado en React.js con un backend en Node.js, conectado a una base de datos MariaDB. Permite la gestión eficiente de datos y ofrece una interfaz de usuario dinámica y responsiva.
 
 ## Available Scripts
+Funcionalidades Implementadas
 
-In the project directory, you can run:
+    Componentes Funcionales: Uso de Hooks para el manejo de estados.
+
+    API REST: Endpoints configurados en Node para consultar la base de datos.
+
+    Seguridad: Validaciones de entrada de datos en formularios.
+
+    Acceso Remoto: Configuración para permitir la visualización desde otros dispositivos en la red local.
 
 ### `npm start`
 
