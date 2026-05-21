@@ -51,6 +51,34 @@ Conexión a Base de Datos
 <img width="1295" height="757" alt="Captura desde 2026-05-20 12-10-29" src="https://github.com/user-attachments/assets/b5caef57-3028-4d2b-bdd5-503a01331f5a" />
 
 
+Estructura del Código
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img width="1295" height="757" alt="Captura desde 2026-05-20 12-10-29" src="https://github.com/user-attachments/assets/35388ec2-66c5-4d0b-ba11-1dfc0ca93a51" />
+
+
+
+
+
+Evidencia de GitHub
+
+
+
+
+
+<img width="1029" height="645" alt="imagen" src="https://github.com/user-attachments/assets/2987ce8b-ef16-4520-93fe-52f77bb98eaf" />
 
 
 
