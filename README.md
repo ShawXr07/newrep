@@ -26,6 +26,29 @@ Frontend
 
 
 
+Conexión a Base de Datos
+
+
+
+
+<img width="952" height="205" alt="Captura desde 2026-05-20 12-03-39" src="https://github.com/user-attachments/assets/1f697227-70c2-4dea-9af7-857756537f53" />
+
+
+
+
+
+
+
+<img width="513" height="306" alt="imagen" src="https://github.com/user-attachments/assets/4df91e57-1a5a-4bf4-8f8d-cb3c274821e2" />
+
+
+
+
+
+
+
+
+<img width="1295" height="757" alt="Captura desde 2026-05-20 12-10-29" src="https://github.com/user-attachments/assets/b5caef57-3028-4d2b-bdd5-503a01331f5a" />
 
 
 
