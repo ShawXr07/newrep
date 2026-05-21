@@ -86,3 +86,58 @@ Evidencia de GitHub
 
 
 
+
+
+
+⚙️ Configuración y Requisitos del Sistema
+
+Para que el proyecto funcione correctamente, se deben cumplir los siguientes requisitos técnicos que implementé durante el desarrollo:
+
+    Servidor de Base de Datos: MariaDB configurado en puerto local.
+
+    Entorno de Ejecución: Node.js (v18 o superior).
+
+    Gestor de Paquetes: NPM para la administración de dependencias de React.
+
+    Acceso a Red: Configuración de firewall para permitir tráfico en los puertos 3000 (Frontend) y 3001 (Backend).
+
+ Arquitectura de la Aplicación
+
+El sistema sigue un modelo de arquitectura cliente-servidor:
+
+    Frontend (Client Side): Desarrollado con React.js, utilizando componentes funcionales y Hooks (useState, useEffect) para una experiencia de usuario dinámica.
+
+    Backend (Server Side): Una API construida en Node.js que gestiona las peticiones HTTP y la lógica de negocio.
+
+    Persistencia (Database): MariaDB se encarga de almacenar de forma segura la información del sistema Fastech.
+
+Desafíos Técnicos Superados
+
+Durante el desarrollo, se resolvieron puntos críticos de integración:
+
+    Conectividad: Configuración del controlador de MariaDB en Node para asegurar latencia mínima.
+
+    CORS: Implementación de políticas de intercambio de recursos de origen cruzado para permitir que React se comunique con el servidor local.
+
+    Diseño Responsivo: Adaptación de la interfaz para que sea funcional en distintos tamaños de pantalla.
+
+ Conclusión:
+
+Este proyecto representa la culminación del aprendizaje en la materia de Desarrollo de Software, integrando tecnologías modernas de la industria. Se logró crear una herramienta funcional que no solo cumple con los requisitos académicos, sino que sienta las bases para una aplicación escalable y profesional.
+ Información Académica
+
+    Estudiante: Ronald Alexander Trujillo Clímaco
+
+    Institución: Instituto Nacional de San Miguel Tepezontes
+
+    Docente: Lic. Wiliam Samuel Mejía
+
+    Proyecto: Fastech - Gestión de Aplicaciones Web
+
+    Fecha: Mayo 2026
+
+
+
+
+
+
